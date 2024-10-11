@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-buttons{
+  background-color:#54C392;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  display: flex;
+  gap: 50px;
+  font-size: larger;
+  }
+.parentContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #C0EBA6;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.parentContainerModify{
+  width: 100%;
+  height: 100%;
+  background-color: #C0EBA6;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.childContainerModify{
+  width: 350px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid #ffffff;
+  animation: golaGanda 800ms infinite ease-in forwards;
+}
+
+.childContainer {
+  width: 250px;
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid #ffffff;
+}
+
+.childContainer:hover {
+  border: 3px solid #000000;
+  box-shadow: #54C392 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageContainer {
+  width: 180px;
+  height: 200px;
+  /* background-color: white; */
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.pic{
+height: 100%;
+width: 100%;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 12px;
+  text-align: left;
+}
+
+.readMore {
+  width: 150px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 10px;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+.readMore:hover {
+  border: 1px solid rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
+  background-color: #54C392;
+
+
+}
+
+@media only screen and (max-width: 599px) {
+  .childContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .childContainer {
+    width: 90%;
+  } 
+}
+
+@keyframes golaGanda {
+  0% {
+    border: 3px solid #54C392;
+  }
+  20% {
+    border: 3px solid #C0EBA6;
+  }
+  40% {
+    border: 3px solid #54C392;
+  }
+  60% {
+    border: 3px solid #C0EBA6 ;
+  }
+  80% {
+    border: 3px solid #54C392;
+  }
+  100% {
+    border: 3px solid #C0EBA6;
+  }
+}
+.footer{
+  background-color:#54C392;
+  width: 1350px;
+  height: 150px;
+ }
+.footername{
+  text-align: center;
+  font-size: xx-large;
+  justify-content: center;
+  gap: 30px;
+}
+.edit{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    gap: 50px;
+}
+.RESOLVE{
+  display: flex;
+justify-content: center;
+gap: 40px;
+}
+.aboutedit{
+  margin-top: 150px;
+}
+.web{
+ text-align:center ;
+
+}
